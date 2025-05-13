@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const fn = encodeURIComponent(firstNameInput.value.trim());
             const ln = encodeURIComponent(lastNameInput.value.trim());
             const email = encodeURIComponent(emailInput.value.trim());
-            const url = `http://138.199.205.163:5000/registration?fn=${fn}&ln=${ln}&email=${email}`;
+            const url = `https://registration-mb.measureyourweb.com/registration?fn=${fn}&ln=${ln}&email=${email}`;
             window.location.href = url;
         }
     });
