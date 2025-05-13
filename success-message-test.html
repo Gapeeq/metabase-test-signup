@@ -41,7 +41,8 @@
                         <h1>Registration Successful!</h1>
                         <p>
                             An e-mail with login credentials has been sent to:<br>
-                            <strong id="user-email">user@email.com</strong>
+                            <strong id="user-email">user@email.com</strong><br>
+                            PLEASE CHECK SPAM FOLDER IF YOU DO NOT SEE IT IN YOUR INBOX!!!
                         </p>
                         <a href="https://metabase.measureyourweb.com" class="button" style="display:inline-block;margin-top:2rem;padding:0.75rem 2rem;background:#509ee3;color:#fff;border-radius:6px;text-decoration:none;font-weight:500;">Back to Registration</a>
                     </div>
@@ -49,12 +50,5 @@
             </main>
         </div>
     </div>
-    <script>
-        // Optionally, you can set the email dynamically if you pass it as a query param
-        const params = new URLSearchParams(window.location.search);
-        if(params.has('email')) {
-            document.getElementById('user-email').textContent = params.get('email');
-        }
-    </script>
 </body>
 </html>
