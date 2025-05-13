@@ -1,0 +1,151 @@
+:root {
+    --mb-default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --mantine-color-text-dark: #4C5773;
+    --mantine-color-text-medium: #696E7B;
+    --mantine-color-text-light: #949AAB;
+    --mantine-color-brand: #509EE3;
+    --mantine-color-brand-hover: #3D8FD1;
+    --mantine-color-border: #EEECEC;
+    --mantine-color-background: #FFFFFF;
+    --mantine-color-background-hover: #F9FBFC;
+    --primary-color: #509ee3;
+    --primary-hover: #3a87c7;
+    --error-color: #e3595e;
+    --border-color: #ddd;
+    --text-color: #333;
+    --disabled-color: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--mb-default-font-family);
+    background-color: var(--mantine-color-background);
+    color: var(--mantine-color-text-dark);
+    line-height: 1.5;
+}
+
+.mb-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 2rem;
+}
+
+.metabase-logo {
+    color: var(--mantine-color-brand);
+}
+
+.form-content h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--mantine-color-text-dark);
+    margin-bottom: 2.5rem;
+}
+
+.registration-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.label-container {
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+}
+
+label.error {
+    color: var(--error-color);
+}
+
+.required-marker {
+    color: var(--error-color);
+    font-size: 0.875rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.1);
+}
+
+input.error {
+    border-color: var(--error-color);
+}
+
+input.error:focus {
+    box-shadow: 0 0 0 2px rgba(227, 89, 94, 0.1);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    min-height: 1.25rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+button:disabled {
+    background-color: var(--disabled-color);
+    cursor: not-allowed;
+} 
